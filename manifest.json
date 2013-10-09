@@ -1,0 +1,25 @@
+{
+  "name": "CQ Switcher",
+  "version": "1.4",
+  "description": "This simple extension provides links to 'switch' between useful tools on an Adobe CQ 5.5 server without having to mess with the URL.",
+  "icons": { 
+     "16": "icon16.png",
+     "48": "icon48.png",
+    "128": "icon128.png" 
+  },
+  "browser_action": {
+    "default_icon": "icon128.png",
+    "default_title": "CQ Switcher",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
+

@@ -1,0 +1,178 @@
+<html>
+	<head>
+		<style>
+			div#container dl {
+				font-family: arial, sans-serif;
+				font-size: .9em;
+				width: 200px;
+				/* text-align: right; */
+			}
+
+			div#container div dl {
+				margin: 0 0 0 42px;
+			}
+
+			div#container div.cq-logo {
+				background: url('icon32.png') no-repeat left top;
+			}
+
+			div#container div.felix-logo {
+				background: url('felix32.png') no-repeat left top;
+			}
+
+			div#container div.crxde-logo {
+				background: url('crxde32.png') no-repeat left top;
+			}
+
+			div#container div.crx-logo {
+				background: url('crx32.png') no-repeat left top;
+			}
+
+			div#container dd {
+				font-size: .8em;
+				margin: 0 0 10px 0px;
+			}
+
+			div#about {
+				font-family: arial, sans-serif;
+				font-size: .7em;
+				color: #AAAAAA;
+				margin: 0 0 10px 0;
+				text-align: center;
+			}
+
+			div#about a:link,
+			div#about a:visited,
+			div#about a:hover,
+			div#about a:active {
+				color: #AAAAAA;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="cq-logo">
+				<dl>
+					<dt>Welcome</dt>
+					<dd>
+					<a href="javascript:Switcher.quickSwitch('/libs/cq/core/content/welcome.html', false, 'cq_welcome', 'switched_cq_welcome')">Switch</a>&nbsp;|&nbsp;<a href="javascript:Switcher.quickSwitch('/libs/cq/core/content/welcome.html', true, 'cq_welcome', 'newtab_cq_welcome')">New Tab</a>
+					</dd>
+					<dt>Login</dt>
+					<dd>
+					<a href="javascript:Switcher.quickSwitch('/libs/cq/core/content/login.html', false, 'cq_login', 'switched_cq_login')">Switch</a>&nbsp;|&nbsp;<a href="javascript:Switcher.quickSwitch('/libs/cq/core/content/login.html', true, 'cq_login', 'newtab_cq_login')">New Tab</a>
+					</dd>
+					<dt>Toggle ContentFinder</dt>
+					<dd>
+					<a href="javascript:Switcher.quickSwitch('CF_toggle', false, 'cq_toggle_cf', 'switched_cq_toggle_cf')">Switch</a>&nbsp;|&nbsp;<a href="javascript:Switcher.quickSwitch('CF_toggle', true, 'cq_toggle_cf', 'newtab_cq_toggle_cf')">New Tab</a>
+					</dd>
+					<dt>Toggle Dubug Client Libs</dt>
+					<dd>
+					<a href="javascript:Switcher.quickSwitch('DEBUG_toggle', false, 'cq_toggle_debug', 'switched_cq_toggle_debug')">Switch</a>&nbsp;|&nbsp;<a href="javascript:Switcher.quickSwitch('DEBUG_toggle', true, 'cq_toggle_debug', 'newtab_cq_toggle_debug')">New Tab</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="felix-logo">
+				<dl>
+					<dt>Felix Bundles</dt>
+					<dd>
+					<a href="javascript:Switcher.quickSwitch('/system/console/bundles', false, 'felix_bundles', 'switched_felix_bundles')">Switch</a>&nbsp;|&nbsp;<a href="javascript:Switcher.quickSwitch('/system/console/bundles', true, 'felix_bundles', 'newtab_felix_bundles')">New Tab</a>
+					</dd>
+					<dt>Felix Config Manager</dt>
+					<dd>
+					<a href="javascript:Switcher.quickSwitch('/system/console/configMgr', false, 'felix_config_mgr', 'switched_felix_config_mgr')">Switch</a>&nbsp;|&nbsp;<a href="javascript:Switcher.quickSwitch('/system/console/configMgr', true, 'felix_config_mgr', 'newtab_felix_config_mgr')">New Tab</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="crxde-logo">
+				<dl>
+					<dt>CRXDE | Lite</dt>
+					<dd>
+					<a href="javascript:Switcher.quickSwitch('/crx/de/index.jsp', false, 'crxde_lite', 'switched_crxde_lite')">Switch</a>&nbsp;|&nbsp;<a href="javascript:Switcher.quickSwitch('/crx/de/index.jsp', true, 'crxde_lite', 'newtab_crxde_lite')">New Tab</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="crx-logo">
+				<dl>
+					<dt>CRX Explorer</dt>
+					<dd>
+					<a href="javascript:Switcher.quickSwitch('/crx/explorer', false, 'crx_explorer', 'switched_crx_explorer')">Switch</a>&nbsp;|&nbsp;<a href="javascript:Switcher.quickSwitch('/crx/explorer', true, 'crx_explorer', 'newtab_crx_explorer')">New Tab</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="chrome-logo">
+				<dl>
+					<dt>Other Links</dt>
+					<dd>
+						<a href="javascript:Switcher.quickSwitch('http://localhost:4502/', true, 'localhost_4502', 'clicked_localhost_4502')">localhost:4502</a><br />
+						<a href="javascript:Switcher.quickSwitch('http://dev.day.com/docs/en/cq/current/widgets-api/index.html', true, 'cq_ext_api', 'clicked_cq_ext_api')">CQ.Ext API</a><br />
+						<a href="javascript:Switcher.quickSwitch('http://dev.day.com/content/ddc.html', true, 'dev_day_com', 'clicked_dev_day_com')">dev.day.com</a><br />
+						<a href="javascript:Switcher.quickSwitch('https://groups.google.com/forum/?fromgroups#!forum/day-communique', true, 'day_cq_forum', 'clicked_day_cq_forum')">[day-communique] forum</a>
+					</dd>
+				</dl>
+			</div>
+			<div id="about">
+				<span>CQ Switcher, created by </span><br />
+				<a href="javascript:Switcher.quickSwitch('http://gplus.to/MarkAdamcin/about', true, 'my_plus_page', 'clicked_my_plus_page')">Mark Adamcin</a>&nbsp;@&nbsp;<a href="javascript:Switcher.quickSwitch('http://www.acquitygroup.com', true, 'ag_homepage', 'clicked_ag_homepage')">Acquity Group</a>
+			</div>
+		</div>
+		<script language="javascript">
+			var _gaq = _gaq || [];
+   			_gaq.push(['_setAccount', 'UA-29877677-1']);
+   			_gaq.push(['_trackPageview']);
+
+   			(function() {
+   				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   				ga.src = 'https://ssl.google-analytics.com/ga.js';
+   				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  			})();
+			
+			var CF_toggler = function(tabLocation) {
+				if (tabLocation.href.match(/\/cf(\?[^#]*)?#([^\?]*)/)) {
+					return tabLocation.href.replace(/\/cf(\?[^#])?#([^\?]*)/, "$2$1");
+				} else if (tabLocation.href.match(/\/cf(\?[^#]*)?#(.*)/)) {
+					return tabLocation.href.replace(/\/cf\?([^#]*)?#(.*)/,"$2&$1");
+				} else if (tabLocation.href.match(/^[a-z]+\:\/\/([^\/]+)([^\?]*)(\?.*)?/)) {
+					return tabLocation.href.replace(/^[a-z]+\:\/\/([^\/]+)([^\?]*)(\?.*)?/,"/cf$3#$2");
+				}
+			};
+
+			var Switcher = {
+				quickSwitch: function (path, targetBlank, event_category, event_action, callback) {
+
+   					_gaq.push(['_trackEvent', event_category, event_action]);
+
+					chrome.tabs.getSelected(null, 
+						function(tab) {
+							chrome.tabs.sendRequest(tab.id, 
+							{
+								command: "redirect", 
+								href: path, 
+								targetBlank: targetBlank
+							}, 
+							callback
+							);
+						}
+					);				
+				},
+
+				_getTabLocation: function(callback) {
+					chrome.tabs.getSelected(null, 
+						function(tab) {
+							chrome.tabs.sendRequest(tab.id, {command: "location"}, 
+								function(response) {
+									console.log(response.location.href);
+								}
+							);
+						}
+					);
+				},
+
+				_logLocation: function(response) {
+					console.log(response.location.href);
+				}
+
+			};
+
+		</script>
+	</body>
+</html>
